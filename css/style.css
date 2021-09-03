@@ -56,12 +56,19 @@ img {
 
 /* SITE STRUCTURE */
 
-.site-header,
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
 .site-footer {
-    text-align: center;
-    padding: 3em 0 2em 0;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
+  text-align: center;
+  padding: 3em 0 2em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
 }
 
 .site-identity h1 {
@@ -73,6 +80,8 @@ img {
 .site-navigation ul {
     margin: 0;
     padding: 2em 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .site-navigation li {
