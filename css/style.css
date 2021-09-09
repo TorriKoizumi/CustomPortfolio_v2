@@ -18,6 +18,8 @@
     #EFFECTS (FADE-INS)
 --------------------------------- */
 
+* {background-color: #FAFAFA}
+
 /* #TYPOGRAPHY  */
 body {
     font-family: Helvetica, Arial, sans-serif;
@@ -46,11 +48,20 @@ a:hover {
 .text-centered {
   text-align: center;
 }
+.block-centered {
+  margin: 0 auto;
+  max-width: 40em;
+}
 
 /* #IMAGES */
 img {
   max-width: 100%;
   height: auto;
+}
+
+.circular {
+  max-width: 30em;
+  border-radius: 2em;
 }
 
 /* SITE STRUCTURE */
@@ -61,7 +72,8 @@ img {
   align-items: center;
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  padding: 1em 3em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .site-footer .site-navigation ul{
@@ -73,7 +85,7 @@ img {
 }
 
 .site-identity h1 {
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     font-weight: normal;
 }
@@ -109,13 +121,18 @@ section {
     margin: auto;
 }
 
+.page-title{
+  margin-top: 2em;
+}
 
 /* #LAYOUT: THUMB IMAGE GRID */
 .thumbgrid {
+    margin-top: 3em;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    column-count: 2;
   }
   
   .thumbgrid li {
@@ -134,11 +151,13 @@ section {
       filter: brightness(1.05);
       transition: all ease-in-out 0.2s;
       border: 1px solid rgba(255,255,255,0);
+      border-radius: 2em;
   }
   
   .thumbgrid a:hover img {
       filter: brightness(1);
       border: 1px solid rgba(0,0,0,.3);
+      border-radius: 4em;
   }
 
   /* FULL-WIDTH HELPER */
@@ -200,6 +219,21 @@ section {
       margin: 1em;
     }
   }
+
+/* #LAYOUT: GRID */
+@media (min-width: 768px) {
+  .grid-image-container{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    column-count: 2;
+    column-gap: 1em;
+  }
+  .grid-image-container li{
+    margin: 0;
+    padding: .25em 0;
+  }
+}
 
   /* Page Fade-ins */
 @keyframes fade-in {
