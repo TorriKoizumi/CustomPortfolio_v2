@@ -22,7 +22,7 @@
 
 /* #TYPOGRAPHY  */
 body {
-  font-family: source-sans-pro, sans-serif;
+  font-family: source-sans-pro, Helvetica Neue, Helvetica, arial, sans-serif;
   font-weight: 400;
   font-style: normal;
   /* color: rgba(0,0,0,.7); */
@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-  font-family: montserrat, sans-serif;
+  font-family: 'Montserrat', Futura, Century Gothic, Trebuchet MS, Arial, sans-serif; 
   font-weight: 700;
   font-style: normal;
   font-size: 3em;
@@ -135,11 +135,12 @@ section {
 }
 
 .page-title{
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .contact-list ul{
- 
+ padding: 0;
+ text-align: center;
 }
 
 .contact-list li{
