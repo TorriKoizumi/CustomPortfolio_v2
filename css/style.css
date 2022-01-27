@@ -160,6 +160,7 @@ section {
     list-style: none;
     width: 49.5%;
     padding-bottom: 0.4%;
+    /* flex-grow: 1; */
   }
   
   @media (min-width: 768px) {
@@ -239,6 +240,7 @@ section {
     height: auto;
     margin: 1em;
   }
+
 }
 
 /* #LAYOUT: GRID */
@@ -253,6 +255,7 @@ section {
   .grid-image-container li{
     margin: 0;
     padding: .25em 0;
+    color: red;
   }
 }
 
